@@ -1,0 +1,74 @@
+---
+import { Image } from 'astro:assets';
+import hero1 from '../assets/hero 1 artharaya.webp';
+import hero2 from '../assets/hero 2 artharaya.webp';
+import hero3 from '../assets/hero 3 artharaya.webp';
+---
+
+<section class="relative w-full  overflow-hidden">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="relative w-full h-auto flex justify-center items-center">
+          <Image
+            src={hero3}
+            alt="Banner Hero 3"
+            width={1920}
+            height={1080}
+            class="w-full h-full  max-h-screen "
+             loading="eager"
+          />
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="relative w-full h-auto flex justify-center items-center">
+          <Image
+            src={hero1}
+            alt="Banner Hero 1"
+            width={1920}
+            height={1080}
+            class="w-full h-full max-h-screen "
+             loading="eager"
+          />
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="relative w-full h-auto flex justify-center items-center">
+          <Image
+            src={hero2}
+            alt="Banner Hero 2"
+            width={1920}
+            height={1080}
+            class="w-full h-full max-h-screen "
+             loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<script>
+  import Swiper from 'swiper';
+  import { Pagination, Autoplay } from 'swiper/modules';
+  import 'swiper/css';
+  import 'swiper/css/pagination';
+
+  // Initialize Swiper
+  new Swiper('.swiper-container', {
+    modules: [Pagination, Autoplay],
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+</script>

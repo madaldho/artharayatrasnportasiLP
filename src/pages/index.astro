@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/hero.astro";
+import IconSection from "../components/IconSection.astro";
+import About from "../components/About.astro";
+import FAQ from "../components/FAQ";
+import CarSection from "../components/CarSection";
+import Lokasimap from "../components/lokasimap.astro";
+import Terlaris from "../components/terlaris";
+import Artikel from  "../components/artikel";
+
+// Title dan description untuk meta
+const titlemeta = "Sewa Mobil Nusantara - PT Artha Raya Transportasi";
+const descriptionmeta =
+  "Kami Menawarkan Sewa Mobil Surabaya Murah. Rental Mobil Mercy,BMW,Camry Surabaya Rp 1.5Jt – Rp 15Jt & Sewa Mobil Innova,Zenix,Fortuner,Alphard Harga Rp 1jt–Rp 3Jt";
+
+
+---
+
+<BaseLayout titlemeta={titlemeta} descriptionmeta={descriptionmeta}>
+  <section>
+    <Hero />
+    <About />
+    <IconSection />
+    <Terlaris/>
+    <CarSection client:load />
+    <Artikel client:load/>
+    <FAQ client:load />
+    <Lokasimap />
+  </section>
+  <!-- Bagian CTA -->
+  <div class="relative bg-gray-100 mt-52">
+    <div
+      class="absolute w-full left-0 right-0 transform -translate-y-1/2 z-30 p-2">
+      <div
+        class="bg-white shadow-lg rounded-lg p-4 py-5 md:p-10 flex flex-col md:flex-row justify-between items-center mx-auto md:max-w-7xl space-y-4 md:space-y-0 hover:shadow-2xl transition-shadow duration-500 ease-in-out">
+        <div class="text-center md:text-left">
+          <h2
+            class="text-xl md:text-2xl font-bold text-gray-800 leading-snug hover:text-blue-600 transition-colors duration-500 ease-in-out">
+           Booking Mobil Pilihanmu Sekarang!!
+          </h2>
+          <p class="text-gray-500 mt-2 text-sm md:text-base">
+            kenyamanan dan keamanan rental mobil mewah surabaya dengan berbagai sewa mobil murah yang anda butuhkan
+          </p>
+        </div>
+        <a
+          href="https://wa.me/628113393008"
+          class="relative text-white bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-200 hover:to-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 shadow-md hover:shadow-xl transition-all duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-offset-2">
+          Hubungi Kami
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

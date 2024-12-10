@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<section class="py-16 md:px-20 ">
+  <div class="container mx-auto px-2">
+    <h2 class="text-3xl font-bold text-center mb-10"><span class="text-blue-800 hover:text-blue-600 transition-colors duration-300">
+      Keunggulan
+    </span>{" "}
+    <span class="text-black hover:text-gray-700 transition-colors duration-300">
+      Kami 
+    </span></h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <!-- Card 1 -->
+      <div class="group bg-white shadow-lg hover:shadow-2xl rounded-lg p-6 text-center transition duration-300 transform hover:scale-105">
+        <div class="relative inline-block p-4 bg-blue-100 rounded-full shadow-md group-hover:animate-bounce">
+          <Icon name="mdi:car" class="h-16 w-16 text-blue-600" />
+        </div>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Mobil Berkualitas</h3>
+        <p class="text-gray-600">Armada terbaru dan terawat</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="group bg-white shadow-lg hover:shadow-2xl rounded-lg p-6 text-center transition duration-300 transform hover:scale-105">
+        <div class="relative inline-block p-4 bg-blue-100 rounded-full shadow-md group-hover:animate-bounce">
+          <Icon name="mdi:account-check" class="h-16 w-16 text-blue-600" />
+        </div>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Driver Profesional</h3>
+        <p class="text-gray-600">Sopir berpengalaman dan ramah</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="group bg-white shadow-lg hover:shadow-2xl rounded-lg p-6 text-center transition duration-300 transform hover:scale-105">
+        <div class="relative inline-block p-4 bg-blue-100 rounded-full shadow-md group-hover:animate-bounce">
+          <Icon name="mdi:currency-usd" class="h-16 w-16 text-blue-600" />
+        </div>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Harga Sewa Terjangkau</h3>
+        <p class="text-gray-600">Tarif kompetitif dan transparan</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="group bg-white shadow-lg hover:shadow-2xl rounded-lg p-6 text-center transition duration-300 transform hover:scale-105">
+        <div class="relative inline-block p-4 bg-blue-100 rounded-full shadow-md group-hover:animate-bounce">
+          <Icon name="mdi:clock-check" class="h-16 w-16 text-blue-600" />
+        </div>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Layanan 24 Jam</h3>
+        <p class="text-gray-600">Siap melayani kapan saja</p>
+      </div>
+    </div>
+  </div>
+</section>
