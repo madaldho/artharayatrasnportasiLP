@@ -5,7 +5,7 @@ import hero2 from '../assets/hero 2 artharaya.webp';
 import hero3 from '../assets/hero 3 artharaya.webp';
 ---
 
-<section class="relative w-full  overflow-hidden">
+<section class="relative w-full overflow-hidden">
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <!-- Slide 1 -->
@@ -14,10 +14,12 @@ import hero3 from '../assets/hero 3 artharaya.webp';
           <Image
             src={hero3}
             alt="Banner Hero 3"
-            width={1920}
-            height={1080}
-            class="w-full h-full  max-h-screen "
-             loading="eager"
+            widths={[640, 1280, 1920]} 
+            sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw" 
+            class="w-full h-full object-cover max-h-screen"
+            format="webp" 
+            quality={100} 
+            loading="eager"
           />
         </div>
       </div>
@@ -27,10 +29,12 @@ import hero3 from '../assets/hero 3 artharaya.webp';
           <Image
             src={hero1}
             alt="Banner Hero 1"
-            width={1920}
-            height={1080}
-            class="w-full h-full max-h-screen "
-             loading="eager"
+            widths={[640, 1280, 1920]}
+            sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            class="w-full h-full object-cover max-h-screen"
+            format="webp"
+            quality={85}
+            loading="lazy" 
           />
         </div>
       </div>
@@ -40,10 +44,12 @@ import hero3 from '../assets/hero 3 artharaya.webp';
           <Image
             src={hero2}
             alt="Banner Hero 2"
-            width={1920}
-            height={1080}
-            class="w-full h-full max-h-screen "
-             loading="eager"
+            widths={[640, 1280, 1920]}
+            sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            class="w-full h-full object-cover max-h-screen"
+            format="webp"
+            quality={85}
+            loading="lazy"
           />
         </div>
       </div>

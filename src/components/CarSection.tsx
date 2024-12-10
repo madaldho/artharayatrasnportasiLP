@@ -151,58 +151,61 @@ const CarSection: React.FC = () => {
             Andalan Kami
           </span>
         </h2>
-        <div className="flex justify-center mb-8">
-          <button
-            onClick={() => setFilter("all")}
-            className={`mx-2 px-4 py-2 rounded-full ${
-              filter === "all"
-                ? "bg-blue-600 text-white"
-                : "bg-white text-blue-600"
-            }`}
-          >
-            All
-          </button>
-          <button
-            onClick={() => setFilter("mpv")}
-            className={`mx-2 px-4 py-2 rounded-full ${
-              filter === "mpv"
-                ? "bg-blue-600 text-white"
-                : "bg-white text-blue-600"
-            }`}
-          >
-            MPV
-          </button>
-          <button
-            onClick={() => setFilter("suv")}
-            className={`mx-2 px-4 py-2 rounded-full ${
-              filter === "suv"
-                ? "bg-blue-600 text-white"
-                : "bg-white text-blue-600"
-            }`}
-          >
-            SUV
-          </button>
-          <button
-            onClick={() => setFilter("luxury")}
-            className={`mx-2 px-4 py-2 rounded-full ${
-              filter === "luxury"
-                ? "bg-blue-600 text-white"
-                : "bg-white text-blue-600"
-            }`}
-          >
-            Luxury
-          </button>
-          <button
-            onClick={() => setFilter("bus")}
-            className={`mx-2 px-4 py-2 rounded-full ${
-              filter === "bus"
-                ? "bg-blue-600 text-white"
-                : "bg-white text-blue-600"
-            }`}
-          >
-            Bus
-          </button>
-        </div>
+        <div className="w-full overflow-x-auto mb-8">
+  <div className="flex justify-start items-center space-x-4 px-4 snap-x snap-mandatory">
+    <button
+      onClick={() => setFilter("all")}
+      className={`snap-start flex-shrink-0 px-4 py-2 rounded-full ${
+        filter === "all"
+          ? "bg-blue-600 text-white"
+          : "bg-white text-blue-600"
+      }`}
+    >
+      All
+    </button>
+    <button
+      onClick={() => setFilter("mpv")}
+      className={`snap-start flex-shrink-0 px-4 py-2 rounded-full ${
+        filter === "mpv"
+          ? "bg-blue-600 text-white"
+          : "bg-white text-blue-600"
+      }`}
+    >
+      MPV
+    </button>
+    <button
+      onClick={() => setFilter("suv")}
+      className={`snap-start flex-shrink-0 px-4 py-2 rounded-full ${
+        filter === "suv"
+          ? "bg-blue-600 text-white"
+          : "bg-white text-blue-600"
+      }`}
+    >
+      SUV
+    </button>
+    <button
+      onClick={() => setFilter("luxury")}
+      className={`snap-start flex-shrink-0 px-4 py-2 rounded-full ${
+        filter === "luxury"
+          ? "bg-blue-600 text-white"
+          : "bg-white text-blue-600"
+      }`}
+    >
+      Luxury
+    </button>
+    <button
+      onClick={() => setFilter("bus")}
+      className={`snap-start flex-shrink-0 px-4 py-2 rounded-full ${
+        filter === "bus"
+          ? "bg-blue-600 text-white"
+          : "bg-white text-blue-600"
+      }`}
+    >
+      Bus
+    </button>
+  </div>
+</div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {filteredCars.map((car) => (
             <CarCard
