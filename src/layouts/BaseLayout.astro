@@ -5,6 +5,8 @@ import Navbar from "../components/navbar.astro";
 import Footer from "../components/Footer.astro";
 import { Schema } from "astro-seo-schema";
 import Wangambang from "../components/wangambang.astro";
+import  SpeedInsights  from "@vercel/speed-insights/astro"
+
 
 // Mengambil props titlemeta dan descriptionmeta dari halaman
 const {
@@ -100,6 +102,7 @@ const twitterHandle = "@artharaya-transportasi"; // Ganti dengan username Twitte
         ],
       }}
     />
+
   </head>
 
   <body>
@@ -115,5 +118,6 @@ const twitterHandle = "@artharaya-transportasi"; // Ganti dengan username Twitte
     <Footer />
 
     <Wangambang />
+    <SpeedInsights/> 
   </body>
 </html>

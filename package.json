@@ -8,7 +8,6 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
-    
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -21,6 +20,7 @@
     "@iconify/react": "^5.1.0",
     "@types/react": "^18.3.9",
     "@types/react-dom": "^18.3.0",
+    "@vercel/speed-insights": "^1.1.0",
     "alpinejs": "^3.14.1",
     "astro": "^4.16.5",
     "astro-icon": "^1.1.4",
